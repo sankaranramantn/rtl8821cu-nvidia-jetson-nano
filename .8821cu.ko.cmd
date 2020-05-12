@@ -1,0 +1,1 @@
+cmd_/home/jetson/Builds/sankaran/rtl8821cu-nvidia-jetson-nano/8821cu.ko := ld -EL -r  -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds --build-id  -o /home/jetson/Builds/sankaran/rtl8821cu-nvidia-jetson-nano/8821cu.ko /home/jetson/Builds/sankaran/rtl8821cu-nvidia-jetson-nano/8821cu.o /home/jetson/Builds/sankaran/rtl8821cu-nvidia-jetson-nano/8821cu.mod.o ;  true

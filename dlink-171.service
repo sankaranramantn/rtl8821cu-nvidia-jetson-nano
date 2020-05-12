@@ -1,0 +1,9 @@
+[Unit]
+Description=Switch usb mode of dlink dwa 171 revision C
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/modeswitch.sh
+
+[Install]
+WantedBy=multi-user.target
