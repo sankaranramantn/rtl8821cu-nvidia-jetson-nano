@@ -11,7 +11,7 @@ if [ $MODULE_ALREADY -gt 0 ]; then
 	sudo rmmod -f 8821cu
 fi
 
-echo "Inserting module /lib/modules/$KVER/kernel/drivers/net/wireless/8821cu.ko"
+echo "Inserting module 8821cu"
 sudo modprobe 8821cu
 
 echo "Modeswitch change"
