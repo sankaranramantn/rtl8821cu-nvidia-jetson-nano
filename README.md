@@ -8,6 +8,8 @@ This is a just a fork of the following repository with some additional scripts
 Build
 
 make clean
+
+
 ARCH=arm64 make 
 
 
