@@ -22,3 +22,11 @@ Systemd service for auto modeswitch
 Install dlink-171 service along with usb modeswitch (for treating the dlink 171 usb c as wireless lan device instead of usb device)
 
 ./install-systemd.sh
+
+Reload systemd daemons
+
+sudo systemctl daemon-reload
+
+Reboot system
+
+sudo reboot
