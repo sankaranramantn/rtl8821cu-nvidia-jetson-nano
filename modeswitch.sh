@@ -1,9 +1,10 @@
 set -x
-KVER=$(uname -r)
-echo $KVER
+#KVER=$(uname -r)
+#echo $KVER
+
 MODULE_ALREADY=$(lsmod | grep -c 8821cu)
 
-echo $MODULE_ALREADY
+#echo $MODULE_ALREADY
 
 if [ $MODULE_ALREADY -gt 0 ]; then
 	echo "Module 8821cu already exists"
