@@ -10,12 +10,22 @@ auto eht0
 allow-hotplug eth0
 iface eth0 inet dhcp
 
-auto wlan0
-allow-hotplug wlan0
-iface wlan0 inet static
- address 192.168.12.1
- netmask 255.255.255.0
-iface wlan0 inet manual
- wireless-power off
 
-up iptables-restore < /etc/iptables.ipv4.nat
+#allow-hotplug wlan0
+auto wlan0
+iface wlan0 inet static 
+ address 192.168.12.1
+ network 192.168.12.0
+ netmask 255.255.255.0
+ broadcast 192.168.12.255
+ wireless-power off
+ post-up iptables-restore < /etc/iptables.ipv4.nat
+
+##allow-hotplug wlan0
+##iface wlan0 inet static
+## address 192.168.12.1
+## netmask 255.255.255.0
+##iface wlan0 inet manual
+## wireless-power off
+##
+##up iptables-restore < /etc/iptables.ipv4.nat
